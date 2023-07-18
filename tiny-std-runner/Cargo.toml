@@ -1,0 +1,13 @@
+[package]
+name = "tiny-std-runner"
+version = "0.1.0"
+edition = "2021"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[dependencies]
+tiny-std = { git = "https://github.com/MarcusGrass/tiny-std", rev = "2b1eff4fad1d2f649d50cee13c5be6962e18db0a", features = ["executable"]}
+dlmalloc = { git = "https://github.com/MarcusGrass/dlmalloc-rs.git", rev = "a8e9fc0d2c03a06810530a48abd37fecc71e8109", default-features = false }
+rusl = { git = "https://github.com/MarcusGrass/tiny-std", rev = "2b1eff4fad1d2f649d50cee13c5be6962e18db0a", features = ["alloc"]}
+unix-print = "0.1.0"
+sc = "0.2.7"
